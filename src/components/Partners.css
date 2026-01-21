@@ -1,0 +1,133 @@
+.partners {
+  background: #fff;
+  padding: clamp(3rem, 6vw, 6.5rem) 0;
+  max-width: 1440px;
+  margin: 0  auto;
+}
+
+.partners__title {
+  font-family: 'Rooftop', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-size: clamp(2.25rem, 5vw, 4.375rem);
+  font-weight: 400;
+  line-height: 1;
+  margin: 0 0 clamp(2rem, 4vw, 3rem);
+  color: #0d0d0d;
+}
+
+.partners__grid {
+  display: grid;
+  place-items: stretch;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(1.25rem, 2vw, 2rem);
+  min-height: 36.5625rem;
+}
+
+.partners__card {
+  background: #f4f6f6;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  padding: clamp(1.1rem, 2vw, 1.75rem);
+  aspect-ratio: 335 / 185;
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 200ms ease;
+}
+
+.partners__card--link {
+  cursor: pointer;
+}
+
+.partners__card:hover {
+  background: #e8ebeb;
+}
+
+.partners__logo {
+  display: block;
+  max-width: 92%;
+  max-height: 78%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  filter: grayscale(1);
+  opacity: 0.9;
+  transition: filter 200ms ease, opacity 200ms ease;
+}
+
+.partners__card:hover .partners__logo {
+  filter: none;
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .partners__logo {
+    transition: none;
+  }
+  
+  .partners__card {
+    transition: none;
+  }
+}
+
+.partners__pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.partners__pagerBtn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  border: 2px solid #0d0d0d;
+  background: transparent;
+  color: #0d0d0d;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 150ms ease, opacity 150ms ease;
+}
+
+.partners__pagerBtn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.partners__pagerBtn:not(:disabled):hover {
+  background-color: rgba(13, 13, 13, 0.06);
+}
+
+.partners__pagerCount {
+  font-family: 'Rooftop Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #0d0d0d;
+}
+
+.partners__arrow {
+  display: block;
+}
+
+@media (max-width: 968px) {
+  .partners__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* Минимальная высота для 3 рядов (6 партнеров на планшете) */
+    min-height: clamp(28rem, 50vw, 35rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .partners__grid {
+    grid-template-columns: 1fr;
+    /* Минимальная высота для 4 рядов (4 партнера на мобильном) */
+    min-height: clamp(32rem, 90vw, 40rem);
+  }
+}
+

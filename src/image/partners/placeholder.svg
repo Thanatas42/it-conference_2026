@@ -1,0 +1,10 @@
+<svg width="520" height="220" viewBox="0 0 520 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="520" height="220" rx="10" fill="#F4F6F6"/>
+  <rect x="40" y="50" width="440" height="120" rx="8" fill="#E3E8EA"/>
+  <path d="M132 110H388" stroke="#8B98A0" stroke-width="10" stroke-linecap="round"/>
+  <path d="M180 140H340" stroke="#8B98A0" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+  <text x="50%" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#8B98A0">
+    LOGO
+  </text>
+</svg>
+

@@ -1,0 +1,116 @@
+.archive {
+    padding: 9rem 0 6.6rem;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    min-height: 48.8rem;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.archive::before {
+    content: '';
+    position: absolute;
+    background-image: url('../image/back-white.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    width: 77rem;
+    aspect-ratio: 1231 / 1364;
+    top: -100%;
+    left: 50%;
+    transform: translate(-16%, 7%);
+    pointer-events: none;
+    opacity: 1;
+    z-index: 0;
+}
+
+.archive__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7.7rem;
+    position: relative;
+    z-index: 1;
+}
+
+.archive__title {
+    font-family: 'Rooftop', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 4.375rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+    color: #000;
+}
+
+.archive__years {
+    display: flex;
+    align-items: baseline;
+    gap: clamp(2rem, 5vw, 5.5rem);
+    flex-wrap: wrap;
+}
+
+.archive__year {
+    display: inline-flex;
+    align-items: center;
+    gap: .8rem;
+    text-decoration: none;
+    color: #000;
+    outline: none;
+    user-select: none;
+}
+
+.archive__yearIcon {
+    width: 3.125rem;
+    height: 3.125rem;
+    border: 2px solid currentColor;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+    transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.archive__arrow {
+    display: block;
+}
+
+.archive__yearText {
+    font-family: 'Rooftop Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 4.375rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+.archive__year:hover .archive__yearIcon {
+    background-color: rgba(13, 13, 13, 0.06);
+    transform: translateX(2px);
+}
+
+.archive__year:focus-visible .archive__yearIcon {
+    background-color: rgba(13, 13, 13, 0.09);
+    box-shadow: 0 0 0 4px rgba(13, 13, 13, 0.12);
+}
+
+@media (max-width: 768px) {
+    .archive {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .archive__title {
+        font-size: 2.375rem;
+    }
+
+    .archive__yearText {
+        font-size: 2.375rem;
+    }
+
+    .archive__years {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+    }
+}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Rooftop';
+  src: url('./shift/Rooftop -Regular-Web.woff2') format('woff2'),
+       url('./shift/Rooftop -Regular-Web.woff') format('woff'),
+       url('./shift/Rooftop -Regular-Web.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rooftop Mono';
+  src: url('./shift/Rooftop Mono-Regular-Web.woff2') format('woff2'),
+       url('./shift/Rooftop Mono-Regular-Web.woff') format('woff'),
+       url('./shift/Rooftop Mono-Regular-Web.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

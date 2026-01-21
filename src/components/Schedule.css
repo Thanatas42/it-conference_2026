@@ -1,0 +1,455 @@
+.schedule {
+  padding: 8rem 0;
+  background: #fff;
+}
+
+.schedule__container {
+  max-width: min(1440px, 95vw);
+  padding: 0;
+  margin: 0 auto;
+}
+
+.schedule__title {
+  font-size: 4.375rem;
+  line-height: 1;
+  margin-bottom: 4.6rem;
+}
+
+.schedule__layout {
+  display: grid;
+  grid-template-columns: minmax(140px, 220px) 1fr;
+  column-gap: 8rem;
+  align-items: start;
+}
+
+.schedule__date {
+  font-family: 'Rooftop Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #000;
+  line-height: 1;
+}
+
+.schedule__rows {
+  width: 100%;
+}
+
+.schedule__row {
+  display: grid;
+  grid-template-columns: minmax(92px, 120px) 1fr;
+  column-gap: 14rem;
+  padding: 1.5rem 0 4rem;
+}
+
+.schedule__row:first-child {
+  padding: 0 0 4rem;
+}
+
+.schedule__row+.schedule__row {
+  border-top: 1px solid #d9d9d9;
+}
+
+.schedule__time {
+  font-family: 'Rooftop Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-size: 2rem;
+  line-height: 1.15;
+  color: #000;
+  white-space: nowrap;
+}
+
+.schedule__timeSingle {
+  display: inline-block;
+}
+
+.schedule__timeStart,
+.schedule__timeEnd {
+  display: block;
+}
+
+.schedule__content {
+  min-width: 0;
+}
+
+.schedule__itemTitle {
+  margin: 0;
+  font-family: 'Rooftop', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #000;
+}
+
+.schedule__meta {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+}
+
+.schedule__metaItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.125rem;
+  color: #000;
+  flex-wrap: wrap;
+}
+
+.schedule__metaIcon {
+  display: inline-flex;
+  width: 60px;
+  height: 38px;
+  color: #111;
+  flex: 0 0 auto;
+}
+
+.schedule__metaText {
+  padding-top: 10px;
+}
+
+.schedule__desc {
+  margin: 2rem 0 0;
+  font-size: 1.125rem;
+  color: #000;
+  max-width: 54rem;
+}
+
+.schedule__speakers {
+  margin-top: 3.5rem;
+  grid-column: 1 / -1;
+}
+
+:root {
+  --schedule-card-bg: #333F48;
+  --schedule-card-text: #fff;
+  --schedule-card-muted: rgba(255, 255, 255, 0.78);
+  --schedule-card-accent: #67ded5;
+  --schedule-card-track: rgba(51, 63, 72, 0.18);
+  --schedule-card-thumb: rgba(51, 63, 72, 0.8);
+  --schedule-speaker-card-w: 325px;
+  --schedule-speaker-card-h: 370px;
+}
+
+.scheduleSpeakers {
+  width: 100%;
+}
+
+.scheduleSpeakers--single {
+  width: 100%;
+}
+
+.scheduleSpeakers__rail {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.scheduleSpeakers__scroller {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: grab;
+  user-select: none;
+}
+
+.scheduleSpeakers__scroller--dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+}
+
+.scheduleSpeakers__scroller::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.scheduleSpeakers__item {
+  flex: 0 0 var(--schedule-speaker-card-w);
+  scroll-snap-align: start;
+}
+
+.scheduleSpeakers__item--wide {
+  flex-basis: calc(var(--schedule-speaker-card-w) * 2);
+}
+
+.scheduleSpeakers__scrollbar {
+  padding-top: 0.25rem;
+}
+
+.scheduleSpeakers__scrollTrack {
+  width: 100%;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: var(--schedule-card-track);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.scheduleSpeakers__scrollThumb {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--schedule-card-thumb);
+  will-change: transform;
+  cursor: grab;
+}
+
+.scheduleSpeakers__scrollThumb--dragging {
+  cursor: grabbing;
+}
+
+/* single speaker card should stretch to full width, no scroller */
+.scheduleSpeakers--single .scheduleSpeakerCard {
+  width: var(--schedule-speaker-card-w);
+}
+
+/* Single speaker: full-width "line" (not a fixed-size card) */
+.scheduleSpeakerLine {
+  color: var(--schedule-card-text);
+  background-color: #333F48;
+  background-image: url('../image/back.png');
+  background-position: 28% -10%;
+  background-repeat: no-repeat;
+  background-size: 40rem 40rem;
+  width: 100%;
+  padding: 1.25rem 1.25rem 1.35rem;
+  display: grid;
+  grid-template-columns: minmax(220px, 360px) 1fr;
+  column-gap: 2.25rem;
+  align-items: start;
+  overflow: hidden;
+}
+
+.scheduleSpeakerLine__person {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 0.85rem;
+  align-items: start;
+  min-width: 0;
+}
+
+.scheduleSpeakerLine__head {
+  min-width: 0;
+}
+
+.scheduleSpeakerLine__name {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 7px;
+  line-height: 1;
+  white-space: pre-line;
+}
+
+.scheduleSpeakerLine__talk {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #fff;
+  white-space: pre-line;
+}
+
+.scheduleSpeakerCard {
+  color: var(--schedule-card-text);
+  background-color: #333F48;
+  background-image: url('../image/back.png');
+  background-position: 28% -10%;
+  background-repeat: no-repeat;
+  background-size: 40rem 40rem;
+  padding: 1rem 1rem 1.1rem;
+  width: 100%;
+  height: var(--schedule-speaker-card-h);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.scheduleSpeakerCard__top {
+  display: block;
+}
+
+.scheduleSpeakerCard__people {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem 1.25rem;
+}
+
+.scheduleSpeakerCard--group .scheduleSpeakerCard__people {
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+}
+
+.scheduleSpeakerCard__person {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 0.85rem;
+  align-items: start;
+  min-width: 0;
+}
+
+.scheduleSpeakerCard__photoWrap {
+  width: 60px;
+  height: 56px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  flex: 0 0 auto;
+}
+
+.scheduleSpeakerCard__photo {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.scheduleSpeakerCard__name {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 7px;
+  line-height: 1;
+  white-space: pre-line;
+}
+
+.scheduleSpeakerCard__companyPill {
+  font-family: 'Rooftop Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  color: var(--hero-text);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.scheduleSpeakerCard__companyArrow {
+  width: 1.9rem;
+  height: 1.55rem;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid #fff;
+  border-radius: 999px;
+  flex: 0 0 auto;
+}
+
+.scheduleSpeakers__companyArrowIcon,
+.scheduleSpeakerCard__companyArrowIcon {
+  border: 1px solid var(--speakers-accent);
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.6875rem;
+  line-height: 1;
+  padding: 0;
+  flex-shrink: 0;
+  transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  color: var(--hero-text);
+}
+
+.scheduleSpeakerCard__companyText {
+  font-size: 0.875rem;
+  line-height: 1;
+  text-transform: uppercase;
+  border: 1.5px solid #fff;
+  border-radius: 99px;
+  padding: 4px 12px;
+}
+
+.scheduleSpeakerCard__talk {
+  display: flex;
+  align-items: center;
+  margin: 0.9rem 0 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+  white-space: pre-line;
+  flex: 1 1 auto;
+  overflow: hidden;
+  max-height: 9.2em;
+}
+
+.scheduleSpeakerCard--single {
+  min-height: 160px;
+}
+
+@media (max-width: 968px) {
+  .schedule__layout {
+    grid-template-columns: 1fr;
+    row-gap: 1.25rem;
+  }
+
+  .schedule__date {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .schedule {
+    padding: clamp(2rem, 5vw, 4rem) 0;
+  }
+
+  .schedule__title {
+    font-size: clamp(1rem, 1.5rem, 3rem);
+    text-align: left;
+  }
+
+  .schedule__metaIcon {
+    width: clamp(40px, 55px, 70px);
+    height: clamp(25px, 34px, 44px);
+  }
+
+  .schedule__time {
+    font-size: clamp(1rem, 1.5rem, 3rem);
+  }
+
+  .schedule__date {
+    font-size: clamp(1rem, 1.5rem, 3rem);
+  }
+
+  .schedule__metaText {
+    font-size: clamp(1rem, 1rem, 2rem);
+  }
+
+  .schedule__row {
+    grid-template-columns: minmax(86px, 110px) 1fr;
+    column-gap: 1rem;
+  }
+
+  .schedule__itemTitle {
+    font-size: clamp(1rem, 4vw, 1.125rem);
+  }
+
+  .schedule__desc {
+    font-size: 0.9rem;
+  }
+
+  .scheduleSpeakers__item {
+    flex-basis: 78vw;
+  }
+
+  .scheduleSpeakers__item--wide {
+    flex-basis: 92vw;
+  }
+
+  .scheduleSpeakerCard--group .scheduleSpeakerCard__people {
+    grid-template-columns: 1fr;
+  }
+
+  .scheduleSpeakerCard__name {
+    font-size: 1.35rem;
+  }
+}

@@ -1,0 +1,207 @@
+/* Match project palette (same as Hero) */
+:root {
+  --speakers-bg: #333F48;
+  --speakers-text: #fff;
+  --speakers-accent: #71DBD4;
+  --speakers-scroll-track: rgba(103, 222, 213, 0.25);
+}
+
+.speakers {
+  background: var(--speakers-bg);
+  color: var(--speakers-text);
+  padding: 3rem 0 5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.speakers__container {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.75rem, 4vw, 3rem);
+  width: 100%;  
+}
+
+.speakers__title {
+  font-family: 'Rooftop', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-size: 4.375rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0;
+  color: var(--speakers-text);
+  letter-spacing: 0;
+  width: fit-content;
+}
+
+.speakers__rail {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3.4rem;
+}
+
+.speakers__scroller {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: grab;
+  user-select: none;
+}
+
+.speakers__scroller--dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+}
+
+.speakers__scroller::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.speakers__card {
+  flex: 0 0 20.3125rem;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.speakers__photoWrap {
+  width: 100%;
+  aspect-ratio: 1 / 0.928;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.speakers__photo {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.speakers__meta {
+  padding-top: 1.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1 1 auto;
+  justify-content: space-between
+}
+
+.speakers__name {
+  font-family: 'Rooftop', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.05;
+  margin: 0;
+  white-space: pre-line;
+}
+
+.speakers__role {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--speakers-tex);
+  white-space: pre-line;
+  margin-bottom: 1.25rem;
+}
+
+.speakers-company-button {
+  font-family: 'Rooftop Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  color: var(--hero-text);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  align-self: flex-start;
+  margin-top: clamp(0rem, .8vw, 2.4rem);
+}
+
+.speakers-company-arrow,
+.speakers-company-text {
+  border: 1px solid var(--speakers-accent);
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.6875rem;
+  line-height: 1;
+  padding: 0;
+  flex-shrink: 0;
+  transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  color: var(--hero-text);
+  cursor: pointer;
+}
+
+.speakers-company-arrow {
+  color: var(--speakers-accent);
+  width: 2.1875rem;
+}
+
+.speakers-company-arrow:hover {
+  border-color: var(--speakers-text);
+  color: var(--speakers-text);
+}
+
+.speakers-company-text {
+  color: var(--speakers-accent);
+  padding: 0 .6rem;
+}
+
+.speakers-company-text:hover {
+  border-color: var(--speakers-text);
+  color: var(--speakers-text);
+}
+
+.speakers__scrollbar {
+  padding-top: 0.5rem;
+}
+
+.speakers__scrollTrack {
+  width: 100%;
+  height: 0.6rem;
+  border-radius: 999px;
+  background: var(--speakers-scroll-track);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.speakers__scrollThumb {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--speakers-accent);
+  will-change: transform;
+  cursor: grab;
+}
+
+.speakers__scrollThumb--dragging {
+  cursor: grabbing;
+}
+
+@media (max-width: 968px) {
+  .speakers__title {
+    font-size: clamp(2.25rem, 7vw, 4.375rem);
+    line-height: 1.05;
+  }
+}
+
+@media (max-width: 480px) {
+  .speakers__card {
+    flex-basis: 78vw;
+  }
+}

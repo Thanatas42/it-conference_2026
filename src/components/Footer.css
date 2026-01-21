@@ -1,0 +1,135 @@
+.footer {
+    background: white;
+    position: relative;
+    font-family: 'Rooftop Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    overflow: hidden;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../image/back-white.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    width: 59rem;
+    aspect-ratio: 1231 / 1364;
+    top: 50%;
+    left: 0;
+    transform: translate(-39%, -15%);
+    pointer-events: none;
+    opacity: 1;
+}
+
+.footer-content {
+    border-top: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0 4rem;
+    gap: clamp(1.5rem, 3vw, 4rem);
+    flex-wrap: wrap-reverse;
+    min-height: 46.2rem;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 670px;
+    flex-grow: 1;
+    gap: clamp(1rem, 2.5vw, 2rem);
+    min-width: 0;
+    position: relative;
+    height: clamp(38rem, 40rem, 40rem);
+}
+
+.footer-section span {
+    font-weight: 400;
+    font-size: .875rem;
+    margin: 0;
+    line-height: 1rem;
+    color: #000;
+}
+
+.footer-section p {
+    text-transform: uppercase;
+}
+
+.footer-logo {
+    background-image: url('../image/logo-dark.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+    width: 100%;
+    max-width: min(670px, 100%);
+    aspect-ratio: 670 / 374;
+    height: auto;
+}
+
+.footer-curators {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.section-curator {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    gap: .8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-curator p {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.section-curator p:last-child {
+    padding-left: 7rem;
+}
+
+@media (max-width: 968px) {
+    .footer-content {
+        flex-direction: column-reverse;
+        align-items: flex-end
+    }
+
+    .footer-section {
+        height: auto;
+    }
+
+    .footer-logo {
+        background-position: center top;
+        max-width: 520px;
+    }
+
+    .footer-content::before {
+        top: 40%;
+        transform: translate(-45%, -40%);
+        opacity: 0.9;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content::before {
+        width: 110vw;
+        transform: translate(-55%, -35%);
+        opacity: 0.85;
+    }
+
+    .footer-section {
+        gap: 2rem;
+    }
+
+    .section-curator p {
+        padding-left: 0;
+    }
+
+    .section-curator p:last-child {
+        padding-left: 0;
+    }
+}

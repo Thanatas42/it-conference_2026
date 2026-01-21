@@ -1,0 +1,188 @@
+.logistics {
+    background: #333f48;
+    color: #fff;
+    padding: 3.5rem 0;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.logistics__section+.logistics__section {
+    margin-top: 8rem;
+}
+
+.logistics__header {
+    display: grid;
+    grid-template-columns: minmax(280px, 1fr) minmax(280px, 1fr);
+    align-items: center;
+    margin-bottom: 3.5rem;
+    gap: 1.2rem;
+}
+
+.logistics__title {
+    font-family: 'Rooftop', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 4.375rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 0;
+}
+
+.logistics__meta {
+    display: flex;
+    grid-template-columns: auto 1fr;
+    gap: 1.4rem;
+    align-items: center;
+    justify-self: start;
+    max-width: 42rem;
+}
+
+.logistics__metav2 {
+    display: flex;
+    grid-template-columns: auto 1fr;
+    gap: 1.4rem;
+    justify-self: start;
+    max-width: 42rem;
+    align-items: flex-start;
+}
+
+.logistics__metaText {
+    text-align: left;
+    display: flex;
+    margin-top: 1.4rem;
+    gap: 1.4rem;
+    flex-direction: column;
+}
+
+.logistics__metaTextv2 {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.logistics__metaIcon {
+    display: grid;
+    place-items: center;
+    width: 5.25rem;
+    height: 3.25rem;
+}
+
+.logistics__pin {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.logistics__metaTitle {
+    font-family: 'Rooftop Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.logistics__metaSub {
+    font-family: 'Rooftop', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.logistics__metaSubv2 {
+    font-family: 'Rooftop Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.logistics__grid {
+    display: grid;
+    gap: 1.2rem;
+}
+
+.logistics__grid--media {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+}
+
+.logistics__grid--transfer {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+}
+
+.logistics__media {
+    border-radius: 0;
+    overflow: hidden;
+    background: rgba(217, 225, 226, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    aspect-ratio: 670 / 370;
+    height: auto;
+}
+
+.logistics__media--photo {
+    background-image: url('../image//repino.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logistics__media--map {
+    background: rgba(217, 225, 226, 0.08);
+}
+
+.logistics__map {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    filter: grayscale(1) contrast(1.05) brightness(0.95);
+    display: block;
+}
+
+.logistics__note {
+    font-family: 'Rooftop', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    max-width: 460px;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.logistics__note p {
+    margin: 0 0 1rem;
+    max-width: 34rem;
+}
+
+.logistics__note p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 968px) {
+    .logistics__header {
+        grid-template-columns: 1fr;
+    }
+
+    .logistics__meta {
+        justify-self: start;
+    }
+
+    .logistics__grid--media,
+    .logistics__grid--transfer {
+        grid-template-columns: 1fr;
+    }
+
+    .logistics__media {
+        aspect-ratio: 670 / 370;
+    }
+
+    .logistics__map {
+        height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logistics {
+        padding: clamp(2.25rem, 7vw, 3.25rem) 0;
+    }
+
+    .logistics__title {
+        font-size: clamp(2rem, 9vw, 2.6rem);
+    }
+}
