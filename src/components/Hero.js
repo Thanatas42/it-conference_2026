@@ -38,7 +38,7 @@ const Hero = () => {
 
                     <a href='#schedule' className='hero-date-button'>
                         <span className='hero-date-arrow'>→</span>
-                        <span className='hero-date-text'>31.07-01.08</span>
+                        <span className='hero-date-text'>06.08-07.08</span>
                     </a>
                 </div>
             </div>

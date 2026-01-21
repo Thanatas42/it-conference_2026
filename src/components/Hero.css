@@ -16,7 +16,7 @@
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    background-image: url('../image/back.png');
+    background-image: url('../image/back.webp');
     background-repeat: no-repeat;
     background-position: -66% 95%;
     background-size: 67%;
@@ -30,7 +30,7 @@
     z-index: 2;
     top: -85%;
     left: clamp(20%, 39vw, 39%);
-    background-image: url('../image/back.png');
+    background-image: url('../image/back.webp');
     background-repeat: no-repeat;
     background-position: 0;
     background-size: 100%;
@@ -168,6 +168,7 @@
 .hero-date-arrow {
     font-size: clamp(1rem, 1.5vw, 1.25rem);
     width: clamp(2.5rem, 4vw, 3.5rem);
+    padding-top: 4px;
 }
 
 .hero-date-arrow:hover {

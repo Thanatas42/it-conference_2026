@@ -2,25 +2,22 @@
 :root {
   --about-bg: #fff;
   --about-text: #000;
-  --about-text-secondary: #666;
 }
 
 .about {
-  padding: clamp(3rem, 9rem, 12rem) 0;
+  padding: clamp(3rem, 9.2rem, 12rem) 0;
   background: var(--about-bg);
   max-width: 1440px;
   margin: 0 auto;
 }
 
 .section-title {
-  font-family: 'Rooftop', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   font-size: clamp(2rem, 5vw, 4.375rem);
   width: 100%;
   font-weight: 400;
   text-align: left;
-  margin: 0 0 clamp(2rem, 4rem, 5rem);
+  margin: 0 0 clamp(2rem, 4.7rem, 5rem);
   color: var(--about-text);
-  line-height: 1.2;
 }
 
 .about-content {
@@ -36,11 +33,10 @@
 }
 
 .about-text p {
-  font-family: 'Rooftop', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   font-size: clamp(1rem, 1.5vw, 1.125rem);
   line-height: 1.2;
   padding-right: clamp(1rem, 7vw, 7.8125rem);
-  color: var(--about-text-secondary);
+  color: var(--about-text);
   margin: 0 0 clamp(1rem, 2vw, 1.5rem);
   max-width: min(757px, 90%);
 }
@@ -132,12 +128,10 @@
   font-weight: 400;
   font-size: 1.25rem;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
   border: 1px solid #000;
   border-radius: 999px;
-  padding: .13em .75em;
+  padding: .5em .75em;
   white-space: nowrap;
-  background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(2px);
 }
 

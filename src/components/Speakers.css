@@ -9,7 +9,7 @@
 .speakers {
   background: var(--speakers-bg);
   color: var(--speakers-text);
-  padding: 3rem 0 5rem;
+  padding: 3.4rem 0 5rem;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -17,15 +17,13 @@
 .speakers__container {
   display: flex;
   flex-direction: column;
-  gap: clamp(1.75rem, 4vw, 3rem);
+  gap: clamp(1.75rem, 4vw, 3.5rem);
   width: 100%;  
 }
 
 .speakers__title {
-  font-family: 'Rooftop', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   font-size: 4.375rem;
   font-weight: 400;
-  line-height: 1.1;
   margin: 0;
   color: var(--speakers-text);
   letter-spacing: 0;
@@ -92,27 +90,23 @@
   padding-top: 1.35rem;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 2rem;
   flex: 1 1 auto;
   justify-content: space-between
 }
 
 .speakers__name {
-  font-family: 'Rooftop', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   font-size: 2rem;
   font-weight: 400;
-  line-height: 1.05;
   margin: 0;
   white-space: pre-line;
 }
 
 .speakers__role {
   font-size: 1rem;
-  line-height: 1.5;
   margin: 0;
   color: var(--speakers-tex);
   white-space: pre-line;
-  margin-bottom: 1.25rem;
 }
 
 .speakers-company-button {
@@ -136,7 +130,7 @@
   align-items: center;
   justify-content: center;
   height: 1.6875rem;
-  line-height: 1;
+  text-transform: uppercase;
   padding: 0;
   flex-shrink: 0;
   transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
@@ -196,7 +190,6 @@
 @media (max-width: 968px) {
   .speakers__title {
     font-size: clamp(2.25rem, 7vw, 4.375rem);
-    line-height: 1.05;
   }
 }
 

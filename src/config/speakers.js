@@ -5,10 +5,12 @@ import kiberprotek from './../image/speakers/kiberprotek.png';
 
 /**
  * Speakers list
+ * - id: unique ID
  * - name: full name (shown in UI, used in alt text)
  * - role: position / title
  * - company: organization label (uppercase in UI)
  * - photo: placeholder photo (per design request)
+ * - url: url company
  */
 export const speakers = [
   {
