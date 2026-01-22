@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/it-conference_2026/static/css/main.c436d8b8.css",
-    "main.js": "/it-conference_2026/static/js/main.5529d377.js",
+    "main.css": "/it-conference_2026/static/css/main.b0259b06.css",
+    "main.js": "/it-conference_2026/static/js/main.793bb9a4.js",
     "static/js/453.56ff269d.chunk.js": "/it-conference_2026/static/js/453.56ff269d.chunk.js",
     "static/media/scalar.png": "/it-conference_2026/static/media/scalar.2e46d621c81fae7b0106.png",
     "static/media/placeholder.png": "/it-conference_2026/static/media/placeholder.6c39d7d762ad4dde79d2.png",
     "static/media/kiberprotek.png": "/it-conference_2026/static/media/kiberprotek.f1733ce86132dfd1efc3.png",
     "static/media/fplus.png": "/it-conference_2026/static/media/fplus.b6dd5079d761ac37ec81.png",
-    "static/media/back-white.svg": "/it-conference_2026/static/media/back-white.6efa4f9f99abff357848.svg",
-    "static/media/back.png": "/it-conference_2026/static/media/back.0885dc9665c32ad1e5dd.png",
+    "static/media/back-white.svg": "/it-conference_2026/static/media/back-white.b0a9c2018dc2d62cc902.svg",
     "static/media/aquarius.png": "/it-conference_2026/static/media/aquarius.0295fdf71cbf85470888.png",
-    "static/media/repino.webp": "/it-conference_2026/static/media/repino.fa7a4d83fe0dcacf3293.webp",
+    "static/media/hotel_hilton.webp": "/it-conference_2026/static/media/hotel_hilton.292bdc85ead343c19626.webp",
     "static/media/Rooftop -Regular-Web.ttf": "/it-conference_2026/static/media/Rooftop -Regular-Web.356a4b751aa751c54620.ttf",
     "static/media/itd.png": "/it-conference_2026/static/media/itd.1e78aa95d96a411b6271.png",
     "static/media/infor.png": "/it-conference_2026/static/media/infor.cd54b61a28666f28885d.png",
@@ -35,20 +34,20 @@
     "static/media/orion.png": "/it-conference_2026/static/media/orion.85611d7b655393132755.png",
     "static/media/Rooftop Mono-Regular-Web.woff": "/it-conference_2026/static/media/Rooftop Mono-Regular-Web.ed6df52768090f276d82.woff",
     "static/media/Rooftop Mono-Regular-Web.woff2": "/it-conference_2026/static/media/Rooftop Mono-Regular-Web.ea0bf37b40a14df9d96f.woff2",
-    "static/media/logo-dark.svg": "/it-conference_2026/static/media/logo-dark.5489ec843be5c3688ffc.svg",
-    "static/media/logo_light.svg": "/it-conference_2026/static/media/logo_light.f188cb37d47da34e253c.svg",
-    "static/media/Location.svg": "/it-conference_2026/static/media/Location.303a641987fbb8e63d2fefb788ff3c6d.svg",
-    "static/media/Conference.svg": "/it-conference_2026/static/media/Conference.fff9c08332b0eb249226383d373d6113.svg",
-    "static/media/Restourant.svg": "/it-conference_2026/static/media/Restourant.b9e01362109ce78ff271871f2f7a80e1.svg",
-    "static/media/Cofe.svg": "/it-conference_2026/static/media/Cofe.03b864f064528e6198c55b570a0402a8.svg",
-    "static/media/Level.svg": "/it-conference_2026/static/media/Level.39c9ff1fc10e14cc299260c19642c9cf.svg",
+    "static/media/logo-dark.svg": "/it-conference_2026/static/media/logo-dark.c814f73f4c3097140be8.svg",
+    "static/media/logo_light.svg": "/it-conference_2026/static/media/logo_light.0fb32cc2879f2241e950.svg",
+    "static/media/Location.svg": "/it-conference_2026/static/media/Location.dbb3b47384eba6131a970c1582334bbe.svg",
+    "static/media/Conference.svg": "/it-conference_2026/static/media/Conference.04b540b5d340983c0556a174a58fe7f0.svg",
+    "static/media/Restourant.svg": "/it-conference_2026/static/media/Restourant.b328afce96c2750cd266401d8f4287ef.svg",
+    "static/media/Cofe.svg": "/it-conference_2026/static/media/Cofe.98fb60e96ed5b42b72f3315892432a56.svg",
+    "static/media/Level.svg": "/it-conference_2026/static/media/Level.1fe9c52b6b947f93d2e87c2e5af83867.svg",
     "index.html": "/it-conference_2026/index.html",
-    "main.c436d8b8.css.map": "/it-conference_2026/static/css/main.c436d8b8.css.map",
-    "main.5529d377.js.map": "/it-conference_2026/static/js/main.5529d377.js.map",
+    "main.b0259b06.css.map": "/it-conference_2026/static/css/main.b0259b06.css.map",
+    "main.793bb9a4.js.map": "/it-conference_2026/static/js/main.793bb9a4.js.map",
     "453.56ff269d.chunk.js.map": "/it-conference_2026/static/js/453.56ff269d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c436d8b8.css",
-    "static/js/main.5529d377.js"
+    "static/css/main.b0259b06.css",
+    "static/js/main.793bb9a4.js"
   ]
 }
