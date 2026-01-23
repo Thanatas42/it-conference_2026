@@ -78,7 +78,14 @@ const Schedule = () => {
                       ) : null}
 
                       {item.description ? (
-                        <p className="schedule__desc">{item.description}</p>
+                        <p className="schedule__desc">
+                          {String(item.description ?? '').split('\n').map((line, i, arr) => (
+                            <React.Fragment key={`${item.id}-d-${i}`}>
+                              {line}
+                              {i < arr.length - 1 ? <br /> : null}
+                            </React.Fragment>
+                          ))}
+                        </p>
                       ) : null}
                     </div>
 

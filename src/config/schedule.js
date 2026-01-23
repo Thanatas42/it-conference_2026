@@ -1,5 +1,6 @@
 import placeholderPhoto from '../image/speakers/placeholder.jpg';
 import placeholderPhotov2 from '../image/speakers/placeholder.png';
+import aquarius_speaker from '../image/speakers/aquarius_speaker.png';
 
 /**
  * Schedule (Program) config
@@ -50,19 +51,19 @@ export const schedule = {
           time: { start: '10:40', end: '12:20' },
           title: 'Техническая сессия №1',
           meta: [{ icon: 'conference', text: 'Конференц-зал, 2 этаж' }],
-          description: 'Инструменты быстрой адаптации вычислительных комплексов, под изменяющиеся условия функционирования',
-          speakers: [
+          description: 'Инструменты быстрой адаптации вычислительных комплексов, под изменяющиеся условия функционирования \n \n Приглашенные спикеры от компаний:\n \n — «Аквариус» \n — «Скала-Р»\n — Yadro \n — VK Tech',
+          /*speakers: [
             {
               id: 's1-1',
-              name: 'Олег\nМарин',
+              name: '',
               company: 'АКВАРИУС',
-              talk: 'ИТ инфраструктура-\nразвитие и перспективы в\nВашем ритме',
-              photo: placeholderPhotov2,
+              talk: '',
+              photo: aquarius_speaker,
             },
             {
               id: 's1-2',
               name: 'Михаил\nГилязов',
-              company: 'СКАЛАР',
+              company: 'СКАЛА^Р',
               talk: 'Концепция виртуального\nКБ в нефтегазовой отрасли',
               photo: placeholderPhoto,
             },
@@ -73,7 +74,14 @@ export const schedule = {
               talk: 'YADRO: готовые решения\nдля цифровой\nтрансформации',
               photo: placeholderPhoto,
             },
-          ],
+            {
+              id: 's1-4',
+              name: '',
+              company: 'VK Tech',
+              talk: '',
+              photo: placeholderPhoto,
+            },
+          ],*/
         },
         {
           id: 'coffee-break-1',
@@ -87,14 +95,14 @@ export const schedule = {
           title: 'Техническая сессия №2',
           meta: [{ icon: 'floor', text: 'Конференц-зал, 2 этаж' }],
           description:
-            'Методы ускорения изменений в ходе развития и эксплуатации информационных систем, создаваемых на основе отечественного специализированного ПО',
-          speakers: [
+            'Методы ускорения изменений в ходе развития и эксплуатации информационных систем, создаваемых на основе отечественного специализированного ПО \n \n Приглашенные спикеры от компаний:\n \n — «Аладдин Р.Д.» \n — Primo RPA \n — UDV Group \n	— «Информатика» \n — ITD Group \n — «Киберпротект»',
+         /* speakers: [
             {
               id: 's2-1',
-              name: 'Владимир\nМаракшин',
-              company: 'КИБЕРПРОТЕКТ',
+              name: '',
+              company: 'Аладдин Р.Д.',
               talk:
-                'Построение масштабируемых\nинсталляций систем\nрезервного копирования\nна базе Кибер Бэкап и\nКибер Хранилище',
+                '',
               photo: placeholderPhotov2,
             },
             {
@@ -117,7 +125,47 @@ export const schedule = {
               talk:
                 'Переход к строгой аутентификации -\nполный отказ от паролей, на примере\nпродуктовой линейки Аладдин',
             },
-          ],
+            {
+              id: 's2-2',
+              name: '',
+              company: 'Primo RPA',
+              talk:
+                '',
+              photo: placeholderPhotov2,
+            },
+            {
+              id: 's2-3',
+              name: '',
+              company: 'UDV Group',
+              talk:
+                '',
+              photo: placeholderPhotov2,
+            },
+            {
+              id: 's2-4',
+              name: '',
+              company: 'Информатика',
+              talk:
+                '',
+              photo: placeholderPhotov2,
+            },
+            {
+              id: 's2-5',
+              name: '',
+              company: 'ITD Group',
+              talk:
+                '',
+              photo: placeholderPhotov2,
+            },
+            {
+              id: 's2-6',
+              name: '',
+              company: 'Киберпротект',
+              talk:
+                '',
+              photo: placeholderPhotov2,
+            },
+          ],*/
         },
         {
           id: 'business-lunch',
@@ -130,8 +178,8 @@ export const schedule = {
           title: 'Техническая сессия №3',
           meta: [{ icon: 'floor', text: 'Конференц-зал, 2 этаж' }],
           description:
-            'Гибкая системно-техническая инфраструктура. Способы оперативного приведения в соответствие под динамично обновляющиеся задачи бизнеса',
-          speakers: [
+            'Гибкая системно-техническая инфраструктура. Способы оперативного приведения в соответствие под динамично обновляющиеся задачи бизнеса \n \n Приглашенные спикеры от компаний:\n \n — Orion soft \n — «Базальт СПО»\n — RuDesktop \n — «Графтех»\n — SETERE Group\n — Visiology',
+         /* speakers: [
             {
               id: 's2-1',
               name: 'Владимир\nМаракшин',
@@ -160,7 +208,7 @@ export const schedule = {
               talk:
                 'Переход к строгой аутентификации -\nполный отказ от паролей, на примере\nпродуктовой линейки Аладдин',
             }
-          ],
+          ],*/
         },
         {
           id: 'transfer-hotel',

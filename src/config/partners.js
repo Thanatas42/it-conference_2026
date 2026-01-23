@@ -1,9 +1,11 @@
 import gisca from '../image/partners/ucgis.png';
+import udv from '../image/partners/udv.svg';
+import vk_tech from '../image/partners/vk_tech.png';
 import aquarius from '../image/partners/aquarius.png';
 import yadro from '../image/partners/yadro.png';
 import gis from '../image/partners/gis.png';
 import scala from '../image/partners/scala.png';
-import fplus from '../image/partners/fplus.png';
+//import fplus from '../image/partners/fplus.png';
 import rudesktop from '../image/partners/rudesktop.png';
 import primo from '../image/partners/primo.png';
 import inform from '../image/partners/infor.png';
@@ -30,24 +32,26 @@ import setere from '../image/partners/setere.png';
  * 3) Optionally add url field to make cards clickable
  */
 export const partners = [
-    { name: 'GIS CA', logo: gisca, url: 'https://example.com' },
-    { name: 'Aquarius', logo: aquarius, url: 'https://example.com' },
-    { name: 'Yadro', logo: yadro, url: 'https://example.com' },
-    { name: 'Газинформсервис', logo: gis, url: 'https://example.com' },
-    { name: 'Скала^р', logo: scala, url: 'https://example.com' },
-    { name: 'Fplus', logo: fplus, url: 'https://example.com' },
-    { name: 'Rudesktop', logo: rudesktop, url: 'https://example.com' },
-    { name: 'Primo RPA', logo: primo, url: 'https://example.com' },
-    { name: 'Информатика', logo: inform, url: 'https://example.com' },
-    { name: 'ITD Group', logo: itd, url: 'https://example.com' },
-    { name: 'Аладдин', logo: aladin, url: 'https://example.com' },
-    { name: 'Киберпротект', logo: cyber, url: 'https://example.com' },
+    { name: 'GIS CA', logo: gisca, url: 'https://ca.gisca.ru/' },
+    { name: 'Aquarius', logo: aquarius, url: 'https://www.aq.ru/' },
+    { name: 'Yadro', logo: yadro, url: 'https://yadro.com/' },
+    { name: 'Газинформсервис', logo: gis, url: 'https://www.gaz-is.ru/' },
+    { name: 'Скала^р', logo: scala, url: 'https://www.skala-r.ru/' },
+    { name: 'UDV Group', logo: udv, url: 'https://udv.group/' },
+    { name: 'VK Tech', logo: vk_tech, url: 'https://tech.vk.com/' },
+  //  { name: 'Fplus', logo: fplus, url: 'https://example.com' },
+    { name: 'Rudesktop', logo: rudesktop, url: 'https://rudesktop.ru/' },
+    { name: 'Primo RPA', logo: primo, url: 'https://primo-rpa.ru/' },
+    { name: 'Информатика', logo: inform, url: 'https://informatika37.ru/' },
+    { name: 'ITD Group', logo: itd, url: 'https://www.iitdgroup.ru/' },
+    { name: 'Аладдин', logo: aladin, url: 'https://www.aladdin-rd.ru/' },
+    { name: 'Киберпротект', logo: cyber, url: 'https://cyberprotect.ru/' },
 
-    { name: 'Visiology', logo: visio, url: 'https://example.com' },
-    { name: 'Графтех', logo: grafteh, url: 'https://example.com' },
-    { name: 'Орион софт', logo: orion, url: 'https://example.com' },
-    { name: 'next', logo: next, url: 'https://example.com' },
-    { name: 'Base Alt', logo: baseAlt, url: 'https://example.com' },
-    { name: 'Setere', logo: setere, url: 'https://example.com' },
+    { name: 'Visiology', logo: visio, url: 'https://ru.visiology.su/' },
+    { name: 'Графтех', logo: grafteh, url: 'https://graf-tech.ru/' },
+    { name: 'Орион софт', logo: orion, url: 'https://www.orionsoft.ru/' },
+    { name: 'next', logo: next, url: 'https://rpanext.ru/' },
+    { name: 'Base Alt', logo: baseAlt, url: 'https://www.basealt.ru/' },
+    { name: 'Setere', logo: setere, url: 'https://www.seteregroup.ru/' },
 ];
 
