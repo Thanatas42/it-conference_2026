@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/it-conference_2026/static/css/main.b0259b06.css",
-    "main.js": "/it-conference_2026/static/js/main.6c45332b.js",
+    "main.js": "/it-conference_2026/static/js/main.b0c7a5f1.js",
     "static/js/453.56ff269d.chunk.js": "/it-conference_2026/static/js/453.56ff269d.chunk.js",
     "static/media/gisca_logunov.png": "/it-conference_2026/static/media/gisca_logunov.0a4cff4e9a2d279f5e95.png",
     "static/media/placeholder.png": "/it-conference_2026/static/media/placeholder.6c39d7d762ad4dde79d2.png",
@@ -46,11 +46,11 @@
     "static/media/Level.svg": "/it-conference_2026/static/media/Level.1fe9c52b6b947f93d2e87c2e5af83867.svg",
     "index.html": "/it-conference_2026/index.html",
     "main.b0259b06.css.map": "/it-conference_2026/static/css/main.b0259b06.css.map",
-    "main.6c45332b.js.map": "/it-conference_2026/static/js/main.6c45332b.js.map",
+    "main.b0c7a5f1.js.map": "/it-conference_2026/static/js/main.b0c7a5f1.js.map",
     "453.56ff269d.chunk.js.map": "/it-conference_2026/static/js/453.56ff269d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b0259b06.css",
-    "static/js/main.6c45332b.js"
+    "static/js/main.b0c7a5f1.js"
   ]
 }
