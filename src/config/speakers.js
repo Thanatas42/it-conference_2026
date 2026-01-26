@@ -2,10 +2,10 @@
 // import aquarius from '../image/speakers/aquarius.png';
 //import fplus from './../image/speakers/fplus.png';
 //import kiberprotek from './../image/speakers/kiberprotek.png';
-import gisca_logunov from './../image/speakers/gisca_logunov.png';
-import next_verisov from './../image/speakers/next_verisov.jpg';
-import primo_rpa_vinogradov from './../image/speakers/primo_rpa_vinogradov.jpg';
-import gisca_rusinov from './../image/speakers/gisca_rusinov.jpg';
+import gisca_logunov from './../image/speakers/gisca_logunov.webp';
+import next_verisov from './../image/speakers/next_verisov.webp';
+import primo_rpa_vinogradov from './../image/speakers/primo_rpa_vinogradov.webp';
+import gisca_rusinov from './../image/speakers/gisca_rusinov.webp';
 
 /**
  * Speakers list

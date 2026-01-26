@@ -1,24 +1,24 @@
-import gisca from '../image/partners/ucgis.png';
+import gisca from '../image/partners/ucgis.webp';
 import udv from '../image/partners/udv.svg';
-import vk_tech from '../image/partners/vk_tech.png';
-import aquarius from '../image/partners/aquarius.png';
-import yadro from '../image/partners/yadro.png';
-import gis from '../image/partners/gis.png';
-import scala from '../image/partners/scala.png';
-//import fplus from '../image/partners/fplus.png';
-import rudesktop from '../image/partners/rudesktop.png';
-import primo from '../image/partners/primo.png';
-import inform from '../image/partners/infor.png';
-import itd from '../image/partners/itd.png';
-import aladin from '../image/partners/aladin.png';
-import cyber from '../image/partners/cyber.png';
+import vk_tech from '../image/partners/vk_tech.webp';
+import aquarius from '../image/partners/aquarius.webp';
+import yadro from '../image/partners/yadro.webp';
+import gis from '../image/partners/gis.webp';
+import scala from '../image/partners/scala.webp';
+//import fplus from '../image/partners/fplus.webp';
+import rudesktop from '../image/partners/rudesktop.webp';
+import primo from '../image/partners/primo.webp';
+import inform from '../image/partners/infor.webp';
+import itd from '../image/partners/itd.webp';
+import aladin from '../image/partners/aladin.webp';
+import cyber from '../image/partners/cyber.webp';
 
-import visio from '../image/partners/visio.png';
-import grafteh from '../image/partners/grafteh.png';
-import orion from '../image/partners/orion.png';
-import next from '../image/partners/next.png';
-import baseAlt from '../image/partners/basealt.png';
-import setere from '../image/partners/setere.png';
+import visio from '../image/partners/visio.webp';
+import grafteh from '../image/partners/grafteh.webp';
+import orion from '../image/partners/orion.webp';
+import next from '../image/partners/next.webp';
+import baseAlt from '../image/partners/basealt.webp';
+import setere from '../image/partners/setere.webp';
 
 /**
  * Partners list

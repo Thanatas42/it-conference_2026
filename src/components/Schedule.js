@@ -35,6 +35,7 @@ const Schedule = () => {
             </>
           ) : null}
         </h2>
+        <p className="schedule__tittle_desc">Управление изменениями в интегрированной ИТ-инфраструктуре, реализованной на базе отечественных продуктов</p>
 
         {days.map((day, dayIdx) => (
           <div key={`day-${dayIdx}`} className="schedule__day">

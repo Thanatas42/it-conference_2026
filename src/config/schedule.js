@@ -1,6 +1,6 @@
-import placeholderPhoto from '../image/speakers/placeholder.jpg';
-import placeholderPhotov2 from '../image/speakers/placeholder.png';
-import aquarius_speaker from '../image/speakers/aquarius_speaker.png';
+//import placeholderPhoto from '../image/speakers/placeholder.jpg';
+//import placeholderPhotov2 from '../image/speakers/placeholder.png';
+//import aquarius_speaker from '../image/speakers/aquarius_speaker.png';
 
 /**
  * Schedule (Program) config
@@ -15,19 +15,19 @@ import aquarius_speaker from '../image/speakers/aquarius_speaker.png';
  */
 
 export const schedule = {
-  title: 'Программа\nконференции',
+  title: 'Программа\n конференции',
   days: [
     {
       date: {
         day: '06',
         month: 'августа',
-        year: '2025',
+        year: '2026',
       },
       items: [
         {
           id: 'transfer',
           time: { start: '09:00' },
-          title: 'Отправление трансфера от м. Автово',
+          title: 'Отправление трансфера от м. Московская',
         },
         {
           id: 'registration',
@@ -231,7 +231,7 @@ export const schedule = {
       date: {
         day: '07',
         month: 'августа',
-        year: '2025',
+        year: '2026',
       },
       items: [
         {
@@ -248,7 +248,7 @@ export const schedule = {
         {
           id: 'transfer-2',
           time: { start: '12:00' },
-          title: 'Трансфер до м. Автово',
+          title: 'Трансфер до м. Московская',
         },
       ],
     },

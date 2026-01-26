@@ -126,7 +126,7 @@ const Logistics = () => {
                                 <LocationIcon className="logistics__pin" />
                             </span>
                             <div className="logistics__metaText">
-                                <h5 className="logistics__metaTitle">РЕПИНО ПАРК ОТЕЛЬ</h5>
+                                <h5 className="logistics__metaTitle">Хилтон Экспофорум</h5>
                                 <p className="logistics__metaSub">
                                     Хилтон Санкт-Петербург Экспофорум, Санкт-Петербург,
                                     <br />
