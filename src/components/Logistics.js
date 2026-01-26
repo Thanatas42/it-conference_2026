@@ -49,7 +49,7 @@ const Logistics = () => {
             if (window.ymaps && mapContainer2Ref.current && !mapInstance2Ref.current) {
                 window.ymaps.ready(() => {
                     const placemarkCoords = [59.867191, 30.260110];
-                    
+
                     mapInstance2Ref.current = new window.ymaps.Map(mapContainer2Ref.current, {
                         center: placemarkCoords,
                         zoom: 15,
@@ -159,9 +159,9 @@ const Logistics = () => {
                             <div className="logistics__metaTextv2">
                                 <div className="logistics__metaTitle">ТОЧКА СБОРА:</div>
                                 <div className="logistics__metaSubv2">
-                                    проспект Стачек, 75 корпус 5
+                                    Проспект Московский, 197
                                     <br />
-                                    (ближайшая станция метро – Автово)
+                                    (ближайшая станция метро – Московская)
                                 </div>
                             </div>
                         </div>
