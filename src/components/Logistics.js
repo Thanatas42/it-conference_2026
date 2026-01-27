@@ -36,7 +36,7 @@ const Logistics = () => {
                             '<a href="https://yandex.ru/maps/?pt=' + mapInstance1Ref.current.getCenter()[1] + ',' + mapInstance1Ref.current.getCenter()[0] + '&z=16" target="_blank" style="color: #0066cc; text-decoration: none; font-weight: 500;">📍 Открыть в Яндекс.Картах</a>' +
                             '</div></div>',
                         balloonContentFooter: '<em style="color: #666; font-size: 0.9em;">Место проведения конференции «ИТ-Ритм»</em>',
-                        hintContent: 'Хилтон Экспофорум'
+                        hintContent: 'Репино парк'
                     });
 
                     mapInstance1Ref.current.geoObjects.add(placemark);
@@ -71,7 +71,7 @@ const Logistics = () => {
                             '<div style="margin-bottom: 8px; color: #d32f2f; font-weight: 500;">09:00</div>' +
                             '<div style="margin-bottom: 4px; color: #666; font-size: 0.9em;">Просим подойти за 10–15 минут до отправления</div>' +
                             '<div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #e0e0e0;">' +
-                            '<a href="https://yandex.ru/maps/?pt=30.260110,59.867191&z=15" target="_blank" style="color: #0066cc; text-decoration: none; font-weight: 500;">📍 Открыть в Яндекс.Картах</a>' +
+                            '<a href="https://yandex.ru/maps/?pt=30.293280,59.986092&z=15" target="_blank" style="color: #0066cc; text-decoration: none; font-weight: 500;">📍 Открыть в Яндекс.Картах</a>' +
                             '</div></div>',
                         balloonContentFooter: '<em style="color: #666; font-size: 0.9em;">Место посадки на трансфер до места проведения</em>',
                         hintContent: 'Точка сбора трансфера'
@@ -126,7 +126,7 @@ const Logistics = () => {
                                 <LocationIcon className="logistics__pin" />
                             </span>
                             <div className="logistics__metaText">
-                                <h5 className="logistics__metaTitle">Репино парк</h5>
+                                <h5 className="logistics__metaTitle">Репино Парк Отель</h5>
                                 <p className="logistics__metaSub">
                                     г. Санкт-Петербург, п. Репино,
                                     <br />
