@@ -13,7 +13,7 @@ const Logistics = () => {
             if (window.ymaps && mapContainer1Ref.current && !mapInstance1Ref.current) {
                 window.ymaps.ready(() => {
                     mapInstance1Ref.current = new window.ymaps.Map(mapContainer1Ref.current, {
-                        center: [59.762582, 30.358682],
+                        center: [60.159581, 29.880482],
                         zoom: 16,
                         controls: ['zoomControl']
                     }, {
@@ -27,8 +27,8 @@ const Logistics = () => {
                         balloonContentBody:
                             '<div style="margin-bottom: 12px;">' +
                             '<div style="margin-bottom: 8px;"><strong>Адрес:</strong></div>' +
-                            '<div style="margin-bottom: 12px;">Хилтон Санкт-Петербург Экспофорум<br/>' +
-                            'Санкт-Петербург, Петербургское шоссе, 62, корпус 1</div>' +
+                            '<div style="margin-bottom: 12px;">Репино парк отель<br/>' +
+                            'г. Санкт-Петербург, п. Репино, Приморское шоссе, д. 394, литера Б, корпус 1</div>' +
                             '<div style="margin-bottom: 8px;"><strong>Контакты организаторов:</strong></div>' +
                             '<div style="margin-bottom: 4px;">С. Лысикова: <a href="tel:+79811930835" style="color: #0066cc; text-decoration: none;">+7 (981) 193 08 35</a></div>' +
                             '<div style="margin-bottom: 8px;">А. Биушкина: <a href="tel:+79110888211" style="color: #0066cc; text-decoration: none;">+7 (911) 088 82 11</a></div>' +
@@ -48,7 +48,7 @@ const Logistics = () => {
         const initMap2 = () => {
             if (window.ymaps && mapContainer2Ref.current && !mapInstance2Ref.current) {
                 window.ymaps.ready(() => {
-                    const placemarkCoords = [59.867191, 30.260110];
+                    const placemarkCoords = [59.986092, 30.293280];
 
                     mapInstance2Ref.current = new window.ymaps.Map(mapContainer2Ref.current, {
                         center: placemarkCoords,
@@ -65,8 +65,8 @@ const Logistics = () => {
                         balloonContentBody:
                             '<div style="margin-bottom: 12px;">' +
                             '<div style="margin-bottom: 8px;"><strong>Адрес:</strong></div>' +
-                            '<div style="margin-bottom: 12px;">проспект Стачек, 75, корпус 5<br/>' +
-                            '<span style="color: #666; font-size: 0.9em;">(ближайшая станция метро – Автово)</span></div>' +
+                            '<div style="margin-bottom: 12px;">ул. Савушкина, д. 13<br/>' +
+                            '<span style="color: #666; font-size: 0.9em;">(ближайшая станция метро — Чёрная речка)</span></div>' +
                             '<div style="margin-bottom: 8px;"><strong>Время отправления:</strong></div>' +
                             '<div style="margin-bottom: 8px; color: #d32f2f; font-weight: 500;">09:00</div>' +
                             '<div style="margin-bottom: 4px; color: #666; font-size: 0.9em;">Просим подойти за 10–15 минут до отправления</div>' +
@@ -126,11 +126,11 @@ const Logistics = () => {
                                 <LocationIcon className="logistics__pin" />
                             </span>
                             <div className="logistics__metaText">
-                                <h5 className="logistics__metaTitle">Хилтон Экспофорум</h5>
+                                <h5 className="logistics__metaTitle">Репино парк</h5>
                                 <p className="logistics__metaSub">
-                                    Хилтон Санкт-Петербург Экспофорум, Санкт-Петербург,
+                                    г. Санкт-Петербург, п. Репино,
                                     <br />
-                                    Петербургское шоссе, 62, корпус 1
+                                    Приморское шоссе, д. 394, литера Б, корпус 1
                                 </p>
                             </div>
                         </div>
@@ -159,9 +159,9 @@ const Logistics = () => {
                             <div className="logistics__metaTextv2">
                                 <div className="logistics__metaTitle">ТОЧКА СБОРА:</div>
                                 <div className="logistics__metaSubv2">
-                                    Проспект Московский, 197
+                                    ул. Савушкина, д. 13
                                     <br />
-                                    (ближайшая станция метро – Московская)
+                                    (ближайшая станция метро — Чёрная речка)
                                 </div>
                             </div>
                         </div>
