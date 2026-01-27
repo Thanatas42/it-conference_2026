@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/it-conference_2026/static/css/main.5d8f6936.css",
-    "main.js": "/it-conference_2026/static/js/main.b17c074f.js",
+    "main.css": "/it-conference_2026/static/css/main.a3605422.css",
+    "main.js": "/it-conference_2026/static/js/main.682ac6fc.js",
     "static/js/453.56ff269d.chunk.js": "/it-conference_2026/static/js/453.56ff269d.chunk.js",
     "static/media/back-white.svg": "/it-conference_2026/static/media/back-white.b0a9c2018dc2d62cc902.svg",
+    "static/media/Repino.webp": "/it-conference_2026/static/media/Repino.a3e8f1316068ec346479.webp",
     "static/media/gisca_logunov.webp": "/it-conference_2026/static/media/gisca_logunov.addc80b91ebc232f4971.webp",
     "static/media/gisca_rusinov.webp": "/it-conference_2026/static/media/gisca_rusinov.12ec9ab3c5eef520fa50.webp",
-    "static/media/hotel_hilton.webp": "/it-conference_2026/static/media/hotel_hilton.292bdc85ead343c19626.webp",
     "static/media/primo_rpa_vinogradov.webp": "/it-conference_2026/static/media/primo_rpa_vinogradov.6d78608d1bf89524446b.webp",
     "static/media/Rooftop -Regular-Web.ttf": "/it-conference_2026/static/media/Rooftop -Regular-Web.356a4b751aa751c54620.ttf",
     "static/media/back.webp": "/it-conference_2026/static/media/back.8741d74f7e7e59b93286.webp",
@@ -43,12 +43,12 @@
     "static/media/Cofe.svg": "/it-conference_2026/static/media/Cofe.98fb60e96ed5b42b72f3315892432a56.svg",
     "static/media/Level.svg": "/it-conference_2026/static/media/Level.1fe9c52b6b947f93d2e87c2e5af83867.svg",
     "index.html": "/it-conference_2026/index.html",
-    "main.5d8f6936.css.map": "/it-conference_2026/static/css/main.5d8f6936.css.map",
-    "main.b17c074f.js.map": "/it-conference_2026/static/js/main.b17c074f.js.map",
+    "main.a3605422.css.map": "/it-conference_2026/static/css/main.a3605422.css.map",
+    "main.682ac6fc.js.map": "/it-conference_2026/static/js/main.682ac6fc.js.map",
     "453.56ff269d.chunk.js.map": "/it-conference_2026/static/js/453.56ff269d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d8f6936.css",
-    "static/js/main.b17c074f.js"
+    "static/css/main.a3605422.css",
+    "static/js/main.682ac6fc.js"
   ]
 }
