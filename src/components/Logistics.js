@@ -36,7 +36,7 @@ const Logistics = () => {
                             '<a href="https://yandex.ru/maps/?pt=' + mapInstance1Ref.current.getCenter()[1] + ',' + mapInstance1Ref.current.getCenter()[0] + '&z=16" target="_blank" style="color: #0066cc; text-decoration: none; font-weight: 500;">📍 Открыть в Яндекс.Картах</a>' +
                             '</div></div>',
                         balloonContentFooter: '<em style="color: #666; font-size: 0.9em;">Место проведения конференции «ИТ-Ритм»</em>',
-                        hintContent: 'Репино парк'
+                        hintContent: 'Репино парк отель'
                     });
 
                     mapInstance1Ref.current.geoObjects.add(placemark);
